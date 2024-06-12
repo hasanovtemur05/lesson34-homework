@@ -1,0 +1,102 @@
+.artist{
+    height:auto;
+    margin-top: 50px;
+    &__title{
+        color: white;
+        font-size: 28px;
+        padding: 20px 0px;
+    }
+    &__btn{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+        font-size: 16px;
+        background-color: transparent;
+        border: 2px solid #A259FF;
+        border-radius: 20px;
+        padding: 20px 20px;
+        margin: 20px 0px;
+    }
+    &__cards{
+        height: 100%;
+        display: grid;
+        grid-template-rows:auto;
+        row-gap: 20px;
+    }
+    &__card{
+        width: 100%;
+        height: auto;
+        background-color: #3B3B3B;
+        border-radius: 20px;
+        img{
+            width: 100%;
+        }
+        .card__title{
+            font-size: 22px;
+            color: white;
+            padding: 10px 15px;
+        }
+        .img{
+            padding: 0px 15px;
+        }
+        .card__info{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 15px;
+          
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            h3{
+                color: #858584;
+                padding: 5px 0px;
+            }
+            p{
+                color: white;
+                padding: 5px 0px;
+            }
+        }
+        .left{
+            h3{
+                padding: 5px 0px;
+                color: #858584;
+            }
+            p{
+                color: white;
+                padding: 5px 0px;
+            }
+        }
+    }
+}
+@media (min-width:768px){
+    .artist{
+        &__btn{
+            width: 50%;
+            margin: 20px 0px;
+        }
+        &__cards{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    }
+}
+@media (min-width:1200px){
+    .artist{
+        &__btn{
+            width: 30%;
+        }
+        &__cards{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+    }
+}
